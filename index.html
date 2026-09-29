@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Auth App</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Autenticación</h1>
+
+    <section id="auth-forms">
+      <h2>Registro</h2>
+      <form id="register-form">
+        <input type="email" id="reg-email" placeholder="Correo" required />
+        <input type="password" id="reg-password" placeholder="Contraseña" required />
+        <button type="submit">Registrarme</button>
+      </form>
+
+      <h2>Iniciar sesión</h2>
+      <form id="login-form">
+        <input type="email" id="login-email" placeholder="Correo" required />
+        <input type="password" id="login-password" placeholder="Contraseña" required />
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+    
+<p><a href="/forgot-password.html">¿Olvidaste tu contraseña?</a></p>
+
+    <section id="dashboard" style="display:none;">
+      <h2>Bienvenido</h2>
+      <p id="user-email"></p>
+      <button id="logout-btn">Cerrar sesión</button>
+    </section>
+
+    <p id="message"></p>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
